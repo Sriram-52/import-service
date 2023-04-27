@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/app.ts",
+    "build": "tsc --build"
+  },
   "dependencies": {
     "exceljs": "^4.3.0",
     "firebase-admin": "^11.7.0"
