@@ -4,12 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node src/app.ts",
+    "start": "ts-node src/app.ts > log-file.txt",
     "build": "tsc --build"
   },
   "dependencies": {
     "exceljs": "^4.3.0",
-    "firebase-admin": "^11.7.0"
+    "firebase-admin": "^11.7.0",
+    "moment": "^2.29.4"
   },
   "devDependencies": {
     "@types/node": "^18.16.1",

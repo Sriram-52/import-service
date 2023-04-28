@@ -1,7 +1,7 @@
-import { importPlacements } from "./mappers/placement";
+import { importPlacements } from "./importers/placement";
 
 async function main() {
-	importPlacements();
+	await importPlacements();
 }
 
 main();

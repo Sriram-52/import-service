@@ -75,10 +75,10 @@ export type Placement = {
 	invoiceFrequency: Omit<TimeSheetFrequency, "Daily">;
 	billingRateType: BillingRateType;
 	billingRate: number;
-	oTBillingRate: number;
+	oTBillingRate?: number;
 	payRateType: PayRateType;
 	payPercentage: number;
-	pONumber: string;
+	pONumber?: string;
 };
 
 export type TimeSheet = {
