@@ -2,3 +2,19 @@ Total invoices to import: 1
 Total: 1
 Rejected: 0
 Fulfilled: 1
+Total timesheets to import: 1
+Total: 1
+Rejected: 0
+Fulfilled: 1
+Total timesheets to import: 1
+Total: 1
+Rejected: 0
+Fulfilled: 1
+Total timesheets to import: 1
+Total: 1
+Rejected: 0
+{
+  status: 'fulfilled',
+  value: 'Timesheet 7B83U2sNAcC19TzBSHzU imported successfully'
+}
+Fulfilled: 1

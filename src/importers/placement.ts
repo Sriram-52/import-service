@@ -295,7 +295,7 @@ export const importPlacements = async () => {
 				placementID: placement.jobCode,
 			});
 			return Promise.resolve(
-				`Placement created successfully - ${placement.jobCode}`
+				`Placement ${placement.jobCode} created successfully`
 			);
 		} catch (error) {
 			return Promise.reject((<Error>error).message);
@@ -306,9 +306,11 @@ export const importPlacements = async () => {
 	const rejected = promiseSettedResult.filter(
 		(result) => result.status === "rejected"
 	);
+	rejected.forEach((error) => console.log(error));
 	console.log(`Rejected: ${rejected.length}`);
 	const fulfilled = promiseSettedResult.filter(
 		(result) => result.status === "fulfilled"
 	);
+	fulfilled.forEach((result) => console.log(result));
 	console.log(`Fulfilled: ${fulfilled.length}`);
 };

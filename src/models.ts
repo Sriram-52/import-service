@@ -90,8 +90,8 @@ export type TimeSheet = {
 	submittedBy: string;
 	approvedAt: string;
 	approvedBy: string;
-	totalWorkingHoursStandard: number;
-	totalWorkingHoursOT: number;
+	totalWorkingHoursStandard: string;
+	totalWorkingHoursOT: string;
 	reportingManager: string;
 };
 

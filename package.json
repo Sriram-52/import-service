@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node src/app.ts > log-file.txt",
+    "start": "ts-node src/app.ts >> log-file.txt",
     "build": "tsc --build"
   },
   "dependencies": {
