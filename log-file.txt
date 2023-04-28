@@ -1,12 +1,4 @@
-Total placements to import: 1
-Creating general section for JOB-0
-Creating work location section for JOB-0
-Creating timesheet section for JOB-0
-Creating client_details section for JOB-0
-Creating invoices section for JOB-0
-Creating recruitment_details section for JOB-0
-Creating expense_details section for JOB-0
-Creating payments section for JOB-0
+Total invoices to import: 1
 Total: 1
 Rejected: 0
 Fulfilled: 1

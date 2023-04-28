@@ -105,5 +105,5 @@ export type Invoice = {
 	invoicedDate: string;
 	invoiceDueDate: string;
 	latestPaymentDate: string;
-	discountAmount: number;
+	discountAmount?: number;
 };
