@@ -4,8 +4,8 @@ import { importTimesheets } from "./importers/timesheets";
 
 async function main() {
 	// await importPlacements();
-	// await importInvoices();
-	await importTimesheets();
+	await importInvoices();
+	// await importTimesheets();
 }
 
 main();

@@ -2,6 +2,26 @@ import { db } from "../db/admin";
 import { transformInvoicesData } from "../mappers/invoices";
 import { adminUserId, parseDate } from "../utils";
 
+async function getNotifiersData(clientId: string, ids: string[]) {
+	try {
+		const notifiers = await Promise.all(
+			ids.map(async (id) => {
+				const contactsRef = db
+					.collection(`CLIENTS/${clientId}/CLIENTS_CONTACTS`)
+					.where("id", "==", id);
+				const contacts = (await contactsRef.get()).docs.map(
+					(doc) => doc.data()?.email
+				);
+				return contacts;
+			})
+		);
+		return notifiers.flat();
+	} catch (error) {
+		console.log(error);
+		return [];
+	}
+}
+
 export async function importInvoices() {
 	const invoices = await transformInvoicesData();
 	console.log(`Total invoices to import: ${invoices.length}`);
@@ -96,7 +116,7 @@ export async function importInvoices() {
 				notifiers: {
 					bcc: [],
 					cc: [],
-					to: [],
+					to: await getNotifiersData(clientId, invoiceSettings?.to ?? []),
 				},
 				payableTo: `<p>${company?.companyName}</p>`,
 				paymentDiscountAmount: 0,
