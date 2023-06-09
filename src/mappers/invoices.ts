@@ -15,7 +15,7 @@ export async function transformInvoicesData() {
 		rows?.map(
 			(row): Invoice => ({
 				employeeId: getCell(row, 1),
-				jobCode: getCell(row, 2),
+				jobCode: `JOB-${getCell(row, 2)}`,
 				activity: getCell(row, 3),
 				hours: Number(getCell(row, 4)),
 				invoicedAmount: Number(getCell(row, 5)),
@@ -24,6 +24,8 @@ export async function transformInvoicesData() {
 				invoiceDueDate: getCell(row, 8),
 				latestPaymentDate: getCell(row, 9),
 				discountAmount: Number(getCell(row, 10)),
+				invoiceNumber: `M${getCell(row, 11)}`,
+				employeeName: getCell(row, 12),
 			})
 		) ?? [];
 

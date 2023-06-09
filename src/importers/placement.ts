@@ -68,29 +68,31 @@ const getPaymentDetails = (placement: Placement) => {
 
 const makeClients = async (
 	clientIds: Array<{
-		clientId: string;
+		clientId?: string;
 		type: "Billable Client" | "End Client";
 	}>
 ): Promise<Record<string, Record<string, any>>> => {
 	const clients: Record<string, Record<string, any>> = {};
-	const promises = clientIds.map(async ({ clientId, type }) => {
-		const ref = db.collection(`CLIENTS/${clientId}/CLIENTS_LOCATIONS`);
-		const snapshot = await ref.orderBy("createdAt").limit(1).get();
-		const locations = snapshot.docs.map((doc) => doc.data());
-		return {
-			clientId,
-			clientType: type,
-			comments: "",
-			contingencyinPayment: "",
-			identification: "",
-			liquidatedDamages: "",
-			prohibibitionPeriod: "",
-			rightToHire: "",
-			selectAddress: locations[0]?.id ?? "",
-			subContracting: "",
-			workLocation: false,
-		};
-	});
+	const promises = clientIds
+		.filter(({ clientId }) => Boolean(clientId))
+		.map(async ({ clientId, type }) => {
+			const ref = db.collection(`CLIENTS/${clientId}/CLIENTS_LOCATIONS`);
+			const snapshot = await ref.orderBy("createdAt").limit(1).get();
+			const locations = snapshot.docs.map((doc) => doc.data());
+			return {
+				clientId: clientId ?? "",
+				clientType: type,
+				comments: "",
+				contingencyinPayment: "",
+				identification: "",
+				liquidatedDamages: "",
+				prohibibitionPeriod: "",
+				rightToHire: "",
+				selectAddress: locations[0]?.id ?? "",
+				subContracting: "",
+				workLocation: false,
+			};
+		});
 	const results = await Promise.all(promises);
 	results.forEach((result) => {
 		clients[result.clientId] = result;
@@ -154,6 +156,26 @@ export const makeInvoiceDetails = async (
 					.join(", ")
 			: "";
 	return invoiceDetails;
+};
+
+export const deletePlacements = async () => {
+	const placements = await transformPlacementsData();
+	console.log(`Total placements to delete: ${placements.length}`);
+	const promises = placements.map(async (placement) => {
+		try {
+			console.log(`Deleting ${placement.jobCode}`);
+			const placementRef = db
+				.collection(`EMPLOYEES/${placement.employeeId}/PLACEMENTS`)
+				.doc(placement.jobCode);
+			await placementRef.delete();
+			console.log(`Deleted ${placement.jobCode}`);
+		} catch (error) {
+			console.log(`Failed to delete ${placement.jobCode}`);
+			console.log(error);
+		}
+	});
+	await Promise.all(promises);
+	console.log("Done");
 };
 
 export const importPlacements = async () => {
@@ -298,7 +320,7 @@ export const importPlacements = async () => {
 				`Placement ${placement.jobCode} created successfully`
 			);
 		} catch (error) {
-			return Promise.reject((<Error>error).message);
+			return Promise.reject(`${placement.jobCode} ${(<Error>error).stack}`);
 		}
 	});
 	const promiseSettedResult = await Promise.allSettled(promises);

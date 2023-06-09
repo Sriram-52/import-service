@@ -1,67 +1,127 @@
-Total invoices to import: 1
-Total: 1
+Total invoices to import: 67
+Sleeping for 2 seconds
+importing invoice MINVOICE#2141 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1853 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1426 - KUBE000389 - JOB-29
+importing invoice MINVOICE#2106 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1180 - KUBE000389 - JOB-11
+importing invoice MINVOICE#1865 - KUBE000389 - JOB-62
+importing invoice MINVOICE#2006 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1088 - KUBE000389 - JOB-11
+importing invoice MINVOICE#1367 - KUBE000389 - JOB-29
+importing invoice MINVOICE#1833 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1958 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1876 - KUBE000389 - JOB-62
+importing invoice MINVOICE#1888 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1981 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1719 - KUBE000389 - JOB-55
+importing invoice MINVOICE#1934 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1512 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1864 - KUBE000389 - JOB-62
+importing invoice MINVOICE#1422 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1558 - KUBE000389 - JOB-43
+importing invoice MINVOICE#2227 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1244 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1119 - KUBE000389 - JOB-11
+importing invoice MINVOICE#1548 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1066 - KUBE000389 - JOB-11
+importing invoice MINVOICE#2075 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1268 - KUBE000392 - JOB-28
+importing invoice MINVOICE#2117 - KUBE000392 - JOB-28
+importing invoice MINVOICE#2183 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1583 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1877 - KUBE000389 - JOB-62
+importing invoice MINVOICE#1692 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1482 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1298 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1397 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1905 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1796 - KUBE000392 - JOB-28
+importing invoice MINVOICE#2034 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1359 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1060 - KUBE000389 - JOB-11
+importing invoice MINVOICE#1336 - KUBE000389 - JOB-29
+importing invoice MINVOICE#1402 - KUBE000389 - JOB-29
+importing invoice MINVOICE#1329 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1691 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1994 - KUBE000389 - JOB-67
+importing invoice MINVOICE#2192 - KUBE000392 - JOB-28
+importing invoice MINVOICE#2025 - KUBE000389 - JOB-67
+importing invoice MINVOICE#1535 - KUBE000389 - JOB-43
+Invoice MINVOICE#2141 - KUBE000392 - JOB-28 imported successfully
+importing invoice MINVOICE#1741 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1308 - KUBE000389 - JOB-29
+importing invoice MINVOICE#1965 - KUBE000389 - JOB-67
+importing invoice MINVOICE#1522 - KUBE000389 - JOB-43
+Invoice MINVOICE#2106 - KUBE000392 - JOB-28 imported successfully
+importing invoice MINVOICE#1699 - KUBE000392 - JOB-28
+importing invoice MINVOICE#1610 - KUBE000392 - JOB-28
+importing invoice MINVOICE#2054 - KUBE000392 - JOB-28
+Invoice MINVOICE#1853 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1180 - KUBE000389 - JOB-11 imported successfully
+importing invoice MINVOICE#1309 - KUBE000389 - JOB-29
+Invoice MINVOICE#2006 - KUBE000392 - JOB-28 imported successfully
+importing invoice MINVOICE#2247 - KUBE000392 - JOB-28
+Invoice MINVOICE#1426 - KUBE000389 - JOB-29 imported successfully
+Invoice MINVOICE#1865 - KUBE000389 - JOB-62 imported successfully
+importing invoice MINVOICE#1775 - KUBE000392 - JOB-28
+Invoice MINVOICE#1719 - KUBE000389 - JOB-55 imported successfully
+Invoice MINVOICE#1512 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1934 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1367 - KUBE000389 - JOB-29 imported successfully
+importing invoice MINVOICE#1472 - KUBE000392 - JOB-28
+Invoice MINVOICE#1833 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1268 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1877 - KUBE000389 - JOB-62 imported successfully
+Invoice MINVOICE#1864 - KUBE000389 - JOB-62 imported successfully
+Invoice MINVOICE#2075 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1876 - KUBE000389 - JOB-62 imported successfully
+Invoice MINVOICE#1888 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1119 - KUBE000389 - JOB-11 imported successfully
+Invoice MINVOICE#1548 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1981 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#2183 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1958 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1583 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1905 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1088 - KUBE000389 - JOB-11 imported successfully
+Invoice MINVOICE#1422 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#2117 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1244 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#2227 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1066 - KUBE000389 - JOB-11 imported successfully
+Invoice MINVOICE#1692 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1336 - KUBE000389 - JOB-29 imported successfully
+Invoice MINVOICE#1359 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1482 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1060 - KUBE000389 - JOB-11 imported successfully
+Invoice MINVOICE#1397 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1298 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#2034 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1796 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1402 - KUBE000389 - JOB-29 imported successfully
+Invoice MINVOICE#1535 - KUBE000389 - JOB-43 imported successfully
+Invoice MINVOICE#2025 - KUBE000389 - JOB-67 imported successfully
+Invoice MINVOICE#1741 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1329 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1691 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1558 - KUBE000389 - JOB-43 imported successfully
+Invoice MINVOICE#1965 - KUBE000389 - JOB-67 imported successfully
+Invoice MINVOICE#2192 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1522 - KUBE000389 - JOB-43 imported successfully
+Invoice MINVOICE#1699 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1308 - KUBE000389 - JOB-29 imported successfully
+Invoice MINVOICE#2054 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1610 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#2247 - KUBE000392 - JOB-28 imported successfully
+importing invoice MINVOICE#1495 - KUBE000389 - JOB-43
+Invoice MINVOICE#1994 - KUBE000389 - JOB-67 imported successfully
+Invoice MINVOICE#1309 - KUBE000389 - JOB-29 imported successfully
+Invoice MINVOICE#1775 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1472 - KUBE000392 - JOB-28 imported successfully
+Invoice MINVOICE#1495 - KUBE000389 - JOB-43 imported successfully
+importing invoice MINVOICE#1748 - KUBE000389 - JOB-55
+Invoice MINVOICE#1748 - KUBE000389 - JOB-55 imported successfully
+Total: 61
 Rejected: 0
-Fulfilled: 1
-Total timesheets to import: 1
-Total: 1
-Rejected: 0
-Fulfilled: 1
-Total timesheets to import: 1
-Total: 1
-Rejected: 0
-Fulfilled: 1
-Total timesheets to import: 1
-Total: 1
-Rejected: 0
-{
-  status: 'fulfilled',
-  value: 'Timesheet 7B83U2sNAcC19TzBSHzU imported successfully'
-}
-Fulfilled: 1
-Total invoices to import: 1
-Error: 9 FAILED_PRECONDITION: The query requires a COLLECTION_GROUP_ASC index for collection CLIENTS_CONTACTS and field id. You can create it here: https://console.firebase.google.com/v1/r/project/eficensit-test-8b2e9/firestore/indexes?create_exemption=Cl1wcm9qZWN0cy9lZmljZW5zaXQtdGVzdC04YjJlOS9kYXRhYmFzZXMvKGRlZmF1bHQpL2NvbGxlY3Rpb25Hcm91cHMvQ0xJRU5UU19DT05UQUNUUy9maWVsZHMvaWQQAhoGCgJpZBAB 
-    at callErrorFromStatus (C:\Users\sriram\Workspace\import-service\node_modules\@grpc\grpc-js\src\call.ts:81:17)
-    at Object.onReceiveStatus (C:\Users\sriram\Workspace\import-service\node_modules\@grpc\grpc-js\src\client.ts:597:51)
-    at Object.onReceiveStatus (C:\Users\sriram\Workspace\import-service\node_modules\@grpc\grpc-js\src\client-interceptors.ts:417:48)
-    at C:\Users\sriram\Workspace\import-service\node_modules\@grpc\grpc-js\src\resolving-call.ts:111:24
-    at processTicksAndRejections (node:internal/process/task_queues:78:11)
-for call at
-    at ServiceClientImpl.makeServerStreamRequest (C:\Users\sriram\Workspace\import-service\node_modules\@grpc\grpc-js\src\client.ts:580:30)
-    at ServiceClientImpl.<anonymous> (C:\Users\sriram\Workspace\import-service\node_modules\@grpc\grpc-js\src\make-client.ts:189:15)
-    at C:\Users\sriram\Workspace\import-service\node_modules\@google-cloud\firestore\build\src\v1\firestore_client.js:227:29
-    at C:\Users\sriram\Workspace\import-service\node_modules\google-gax\src\streamingCalls\streamingApiCaller.ts:58:19
-    at C:\Users\sriram\Workspace\import-service\node_modules\google-gax\src\normalCalls\timeout.ts:54:13
-    at Object.request (C:\Users\sriram\Workspace\import-service\node_modules\google-gax\src\streamingCalls\streaming.ts:186:28)
-    at makeRequest (C:\Users\sriram\Workspace\import-service\node_modules\retry-request\index.js:141:28)
-    at retryRequest (C:\Users\sriram\Workspace\import-service\node_modules\retry-request\index.js:109:5)
-    at StreamProxy.setStream (C:\Users\sriram\Workspace\import-service\node_modules\google-gax\src\streamingCalls\streaming.ts:177:29)
-    at StreamingApiCaller.call (C:\Users\sriram\Workspace\import-service\node_modules\google-gax\src\streamingCalls\streamingApiCaller.ts:88:12)
-    at C:\Users\sriram\Workspace\import-service\node_modules\google-gax\src\createApiCall.ts:118:26
-Caused by: Error
-    at Query._get (C:\Users\sriram\Workspace\import-service\node_modules\@google-cloud\firestore\build\src\reference.js:1717:23)
-    at Query.get (C:\Users\sriram\Workspace\import-service\node_modules\@google-cloud\firestore\build\src\reference.js:1705:21)
-    at C:\Users\sriram\Workspace\import-service\src\importers\invoices.ts:12:41
-    at Generator.next (<anonymous>)
-    at C:\Users\sriram\Workspace\import-service\src\importers\invoices.ts:8:71
-    at new Promise (<anonymous>)
-    at __awaiter (C:\Users\sriram\Workspace\import-service\src\importers\invoices.ts:4:12)
-    at C:\Users\sriram\Workspace\import-service\src\importers\invoices.ts:8:25
-    at Array.map (<anonymous>)
-    at C:\Users\sriram\Workspace\import-service\src\importers\invoices.ts:8:8
-    at Generator.next (<anonymous>)
-    at C:\Users\sriram\Workspace\import-service\src\importers\invoices.ts:8:71
-    at new Promise (<anonymous>)
-    at __awaiter (C:\Users\sriram\Workspace\import-service\src\importers\invoices.ts:4:12)
-    at getNotifiersData (C:\Users\sriram\Workspace\import-service\src\importers\invoices.ts:17:12)
-    at C:\Users\sriram\Workspace\import-service\src\importers\invoices.ts:119:16 {
-  code: 9,
-  details: 'The query requires a COLLECTION_GROUP_ASC index for collection CLIENTS_CONTACTS and field id. You can create it here: https://console.firebase.google.com/v1/r/project/eficensit-test-8b2e9/firestore/indexes?create_exemption=Cl1wcm9qZWN0cy9lZmljZW5zaXQtdGVzdC04YjJlOS9kYXRhYmFzZXMvKGRlZmF1bHQpL2NvbGxlY3Rpb25Hcm91cHMvQ0xJRU5UU19DT05UQUNUUy9maWVsZHMvaWQQAhoGCgJpZBAB ',
-  metadata: Metadata { internalRepr: Map(0) {}, options: {} }
-}
-Total: 1
-Rejected: 0
-Fulfilled: 1
-Total invoices to import: 1
-Total: 1
-Rejected: 0
-Fulfilled: 1
+Fulfilled: 61

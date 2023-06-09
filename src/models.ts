@@ -106,4 +106,6 @@ export type Invoice = {
 	invoiceDueDate: string;
 	latestPaymentDate: string;
 	discountAmount?: number;
+	invoiceNumber: string;
+	employeeName: string;
 };

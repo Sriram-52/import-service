@@ -1,7 +1,7 @@
 import * as path from "path";
 import Excel from "exceljs";
 import type { TimeSheet } from "../models";
-import { getCell } from "../utils";
+import { getCell, reportingManagerId } from "../utils";
 
 export async function transformTimesheetsData() {
 	const filePath = path.join(__dirname, "../../data/timesheets.xlsx");
@@ -15,16 +15,16 @@ export async function transformTimesheetsData() {
 		rows?.map(
 			(row): TimeSheet => ({
 				employeeId: getCell(row, 1),
-				jobCode: getCell(row, 2),
+				jobCode: `JOB-${getCell(row, 2)}`,
 				fromDate: getCell(row, 3),
 				toDate: getCell(row, 4),
 				submittedAt: getCell(row, 5),
-				submittedBy: getCell(row, 6),
+				submittedBy: getCell(row, 1),
 				approvedAt: getCell(row, 7),
-				approvedBy: getCell(row, 8),
+				approvedBy: reportingManagerId,
 				totalWorkingHoursStandard: getCell(row, 9),
-				totalWorkingHoursOT: getCell(row, 10),
-				reportingManager: getCell(row, 11),
+				totalWorkingHoursOT: getCell(row, 10) ?? "00:00",
+				reportingManager: reportingManagerId,
 			})
 		) ?? [];
 	return timesheets;

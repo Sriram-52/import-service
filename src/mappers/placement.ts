@@ -7,7 +7,7 @@ import type {
 	TimeSheetFrequency,
 	WorkLocationType,
 } from "../models";
-import { getCell } from "../utils";
+import { getCell, getDayFromDate } from "../utils";
 
 export async function transformPlacementsData() {
 	const filePath = path.join(__dirname, "../../data/placements.xlsx");
@@ -21,7 +21,7 @@ export async function transformPlacementsData() {
 		rows?.map(
 			(row): Placement => ({
 				employeeId: getCell(row, 1),
-				jobCode: getCell(row, 2),
+				jobCode: `JOB-${getCell(row, 2)}`,
 				billableClientId: getCell(row, 3),
 				jobTitle: getCell(row, 4),
 				netTerms: Number(getCell(row, 5)),
@@ -36,7 +36,7 @@ export async function transformPlacementsData() {
 				workLocationCountry: getCell(row, 14),
 				workLocationZipCode: getCell(row, 15),
 				timeSheetFrequency: <TimeSheetFrequency>getCell(row, 16),
-				timeSheetStartDay: getCell(row, 17),
+				timeSheetStartDay: getDayFromDate(getCell(row, 17)),
 				endClientID: getCell(row, 18),
 				invoiceFrequency: getCell(row, 19),
 				billingRateType: <BillingRateType>getCell(row, 20),
