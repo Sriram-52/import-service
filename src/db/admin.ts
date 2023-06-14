@@ -4,9 +4,11 @@ import serviceAccountKey from "./serviceAccountKey.json";
 
 admin.initializeApp({
 	credential: admin.credential.cert(<ServiceAccount>serviceAccountKey),
+	storageBucket: `${serviceAccountKey.project_id}.appspot.com`,
 });
 
 const auth = admin.auth();
 const db = admin.firestore();
+const storage = admin.storage();
 
-export { auth, db };
+export { auth, db, storage, admin };

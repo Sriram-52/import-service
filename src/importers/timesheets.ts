@@ -1,6 +1,9 @@
+import path from "path";
 import { db } from "../db/admin";
 import { transformTimesheetsData } from "../mappers/timesheets";
-import { parseDate } from "../utils";
+import { getCell, parseDate, uploadFile } from "../utils";
+import Excel from "exceljs";
+import fs from "fs";
 // import log4js from "log4js";
 
 // log4js.configure({
@@ -51,97 +54,91 @@ export const deleteTimesheets = async (employeeID: string) => {
 	console.log(`Fulfilled: ${fulfilled.length}`);
 };
 
+export async function missedTimesheets() {
+	const filePath = path.join(__dirname, "../../data/timesheets.xlsx");
+	const workbook = new Excel.Workbook();
+	const content = await workbook.xlsx.readFile(filePath);
+
+	const timesheetsWs = content.getWorksheet(1);
+	const timesheets = timesheetsWs.getRows(2, timesheetsWs.rowCount - 1) ?? [];
+
+	const timesheetIds: string[] = [];
+	const promises = timesheets.map(async (row) => {
+		const timesheetId = `${getCell(row, "A")}`;
+		const timesheetQuery = db
+			.collectionGroup("TIMESHEETS")
+			.where("id", "==", timesheetId);
+		const timesheetQuerySnap = await timesheetQuery.get();
+		if (timesheetQuerySnap.size === 0) {
+			timesheetIds.push(timesheetId);
+			return;
+		}
+	});
+	await Promise.all(promises);
+	fs.writeFileSync(
+		"missed-timesheets.json",
+		JSON.stringify(timesheetIds, null, 2)
+	);
+	console.log(`Done`);
+}
+
 export async function importTimesheets() {
 	const timesheets = await transformTimesheetsData();
 	console.log(`Total timesheets to import: ${timesheets.length}`);
-	const promises = timesheets.map(async (timesheet, index) => {
+	for await (const timesheet of timesheets) {
 		const timesheetRef = db
-			.collection(`EMPLOYEES/${timesheet.employeeId}/TIMESHEETS`)
-			.doc();
+			.collection(`EMPLOYEES/${timesheet.employeeID}/TIMESHEETS`)
+			.doc(timesheet.id);
 		try {
 			const placementRef = db
-				.collection(`EMPLOYEES/${timesheet.employeeId}/PLACEMENTS`)
-				.doc(timesheet.jobCode);
+				.collection(`EMPLOYEES/${timesheet.employeeID}/PLACEMENTS`)
+				.doc(timesheet.placementID);
 
+			console.log(
+				`Checking if placement exists for timesheet: ${timesheet.id}`,
+				timesheet.placementID
+			);
 			const placement = (await placementRef.get()).data();
 			if (!placement) {
-				return Promise.reject(`Placement ${timesheet.jobCode} does not exist`);
+				return Promise.reject(
+					`Placement ${timesheet.placementID} does not exist`
+				);
 			}
 
 			console.log(
-				`Importing timesheet ${timesheetRef.id} - ${timesheet.employeeId} -${timesheet.jobCode}`
+				`Importing timesheet ${timesheetRef.id} - ${timesheet.employeeID} -${timesheet.placementID}`
 			);
-			if (index % 400 === 0) {
-				console.log(`Sleeping for 2 seconds`);
-				await new Promise((resolve) => setTimeout(resolve, 2000));
+			const newSourcePath = `EMPLOYEES/${timesheet.employeeID}/TIMESHEETS/${timesheet.attachmentDetails.sourcePath}`;
+			let fileurl: string;
+			try {
+				fileurl = await uploadFile(
+					timesheet.attachmentDetails.publicURL,
+					timesheet.attachmentDetails.sourcePath,
+					newSourcePath
+				);
+			} catch (error) {
+				console.log(
+					`file upload failed for Timesheet ${timesheetRef.id}: ${
+						(<Error>error).stack
+					}`
+				);
+				fileurl = "";
 			}
-			await timesheetRef.set({
-				approvedDetails: {
-					approvedAt: new Date(timesheet.approvedAt).toISOString(),
-					approvedBy: timesheet.approvedBy,
-				},
-				attachmentDetails: {
-					publicURL: "",
-					sourcePath: "",
-				},
-				clientId: placement.clientId,
-				createdAt: new Date(timesheet.submittedAt).toISOString(),
-				createdBy: timesheet.employeeId,
-				employeeID: timesheet.employeeId,
-				endDate: parseDate(timesheet.toDate),
-				id: timesheetRef.id,
-				invoiceDetails: {
-					invoiceIds: [],
-					isInvoiced: true,
-				},
-				isApproved: true,
-				isDefaulter: false,
-				isExist: true,
-				isRejected: false,
-				placementID: timesheet.jobCode,
-				reportingManager: timesheet.reportingManager,
-				startDate: parseDate(timesheet.fromDate),
-				statusReport: "<p></p>",
-				timesheetDetails: {},
-				totalWorkedHours: {
-					OT: timesheet.totalWorkingHoursOT,
-					standard: timesheet.totalWorkingHoursStandard,
-				},
-				workdetails: {
-					OTtime: [],
-					standardTime: [],
-				},
-			});
+			timesheet.attachmentDetails.publicURL = fileurl;
+			timesheet.attachmentDetails.sourcePath = newSourcePath;
+			await timesheetRef.set(timesheet);
 			console.log(
-				`Timesheet ${timesheetRef.id} - ${timesheet.employeeId} -${timesheet.jobCode} -${index} imported successfully`
+				`Timesheet ${timesheetRef.id} - ${timesheet.employeeID} -${timesheet.placementID} imported successfully`
 			);
-
-			return Promise.resolve(
-				`Timesheet ${timesheetRef.id} - ${timesheet.employeeId} -${timesheet.jobCode} imported successfully`
+			console.log(
+				"===================================================================================================="
 			);
 		} catch (error) {
-			console.error(
-				`Timesheet ${timesheetRef.id} - ${timesheet.employeeId} -${
-					timesheet.jobCode
-				} import failed: ${(<Error>error).stack}`
-			);
-			return Promise.reject(
-				`Timesheet ${timesheetRef.id} - ${timesheet.employeeId} -${
-					timesheet.jobCode
+			console.log(
+				`Timesheet ${timesheetRef.id} - ${timesheet.employeeID} -${
+					timesheet.placementID
 				} import failed: ${(<Error>error).stack}`
 			);
 		}
-	});
-	const promiseSettedResult = await Promise.allSettled(promises);
-	console.log(`Total: ${promiseSettedResult.length}`);
-	const rejected = promiseSettedResult.filter(
-		(result) => result.status === "rejected"
-	);
-	rejected.forEach((result) => console.log(result));
-	console.log(`Rejected: ${rejected.length}`);
-	const fulfilled = promiseSettedResult.filter(
-		(result) => result.status === "fulfilled"
-	);
-	fulfilled.forEach((result) => console.log(result));
-	console.log(`Fulfilled: ${fulfilled.length}`);
+	}
 }
