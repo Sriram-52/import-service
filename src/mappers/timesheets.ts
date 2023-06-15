@@ -56,7 +56,7 @@ export async function transformTimesheetsData(): Promise<Models.TimeSheets[]> {
 			isExist: true,
 			isRejected: false,
 			placementID: getCell(timesheet, "I"),
-			reportingManger: reportingManagerId,
+			reportingManager: reportingManagerId,
 			startDate: getCell(timesheet, "L"),
 			statusReport: "",
 			timesheetDetails: {},
@@ -118,6 +118,20 @@ export async function transformTimesheetsData(): Promise<Models.TimeSheets[]> {
 				date: getCell(detail, "D"),
 				value: getCell(detail, "E"),
 			}));
+
+		const updatedOTtime = data.workdetails.standardTime.map((time: any) => {
+			const otTime = data.workdetails.OTtime.find(
+				(ot: any) => ot.date === time.date
+			);
+			if (otTime) {
+				return otTime;
+			}
+			return {
+				date: time.date,
+				value: "00:00",
+			};
+		});
+		data.workdetails.OTtime = updatedOTtime;
 
 		const totalWorkedHours = {
 			OT: 0,

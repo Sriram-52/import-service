@@ -1,6 +1,14 @@
-import { importInvoices, missedInvoices } from "./importers/invoices";
+import {
+	importInvoices,
+	missedInvoices,
+	updateEmpIds,
+} from "./importers/invoices";
 import { importPlacements } from "./importers/placement";
-import { importTimesheets, missedTimesheets } from "./importers/timesheets";
+import {
+	importTimesheets,
+	missedTimesheets,
+	updateTimesheets,
+} from "./importers/timesheets";
 
 async function main() {
 	// import data
@@ -10,6 +18,8 @@ async function main() {
 	// missed data
 	// await missedTimesheets();
 	// await missedInvoices();
+	// await updateEmpIds();
+	// await updateTimesheets();
 }
 
 main().catch((err) => console.log(err));

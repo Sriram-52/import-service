@@ -116,9 +116,11 @@ export async function updateEmpIds() {
 			await new Promise((resolve) => setTimeout(resolve, 2000));
 		}
 		await invoiceRef.update({
-			// employeeID: admin.firestore.FieldValue.delete(),
+			employeeID: employeeId,
+			"externalDetails.toClient": false,
+			placementID: getCell(row, "F"),
 			// placementID: admin.firestore.FieldValue.delete(),
-			invoiceName: getCell(row, "K"),
+			// invoiceName: getCell(row, "K"),
 		});
 		console.log(`Updated invoice ${invoiceId}`);
 	});

@@ -1,5 +1,5 @@
 import path from "path";
-import { db } from "../db/admin";
+import { admin, db } from "../db/admin";
 import { transformTimesheetsData } from "../mappers/timesheets";
 import { getCell, parseDate, uploadFile } from "../utils";
 import Excel from "exceljs";
@@ -53,6 +53,52 @@ export const deleteTimesheets = async (employeeID: string) => {
 	fulfilled.forEach((result) => console.log(result));
 	console.log(`Fulfilled: ${fulfilled.length}`);
 };
+
+export async function updateTimesheets() {
+	const filePath = path.join(__dirname, "../../data/timesheets.xlsx");
+	const workbook = new Excel.Workbook();
+	const content = await workbook.xlsx.readFile(filePath);
+
+	const timesheetsWs = content.getWorksheet(1);
+	const timesheets = timesheetsWs.getRows(2, timesheetsWs.rowCount - 1) ?? [];
+
+	const promises = timesheets.map(async (row) => {
+		const timesheetId = `${getCell(row, "A")}`;
+		const timesheetQuery = db
+			.collectionGroup("TIMESHEETS")
+			.where("id", "==", timesheetId);
+		const timesheetQuerySnap = await timesheetQuery.get();
+		if (timesheetQuerySnap.size === 0) {
+			return;
+		}
+
+		const timesheetRef = timesheetQuerySnap.docs[0].ref;
+		const timesheet = timesheetQuerySnap.docs[0].data();
+
+		// const { OTtime, standardTime } = timesheet.workdetails;
+
+		// const otTimeArray = standardTime.map((time: any) => {
+		// 	const otTime = OTtime.find((ot: any) => ot.date === time.date);
+		// 	if (otTime) {
+		// 		return otTime;
+		// 	}
+		// 	return {
+		// 		date: time.date,
+		// 		value: "00:00",
+		// 	};
+		// });
+
+		await timesheetRef.update({
+			reportingManager: timesheet?.reportingManger ?? "",
+			reportingManger: admin.firestore.FieldValue.delete(),
+			// "workdetails.OTtime": otTimeArray,
+		});
+
+		console.log(`Timesheet ${timesheetId} updated successfully`);
+	});
+	await Promise.all(promises);
+	console.log(`Done`);
+}
 
 export async function missedTimesheets() {
 	const filePath = path.join(__dirname, "../../data/timesheets.xlsx");

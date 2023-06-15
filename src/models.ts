@@ -233,7 +233,7 @@ export namespace Models {
 		isExist: boolean;
 		isRejected: boolean;
 		placementID: string;
-		reportingManger: string;
+		reportingManager: string;
 		startDate: string;
 		statusReport: string;
 		timesheetDetails: Record<string, any>;
