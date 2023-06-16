@@ -109,7 +109,7 @@ export async function transformInvoicesData(): Promise<
 				employeeID: employeeId,
 				discount: discounts,
 				externalDetails: {
-					externalAmount: grandTotal,
+					externalAmount: invoicedAmount,
 					toClient: false,
 				},
 				placementID: getCell(row, "F"),
@@ -134,9 +134,7 @@ export async function transformInvoicesData(): Promise<
 					to: getCell(row, "L").split(",").filter(Boolean),
 				},
 				payableTo: "",
-				paymentDiscountAmount: Number(
-					Number(invoicedAmount - grandTotal).toFixed(2)
-				),
+				paymentDiscountAmount: 0,
 				poNumber: "",
 				receivedAmount: Number(Number(grandTotal - openBalance).toFixed(2)),
 				selectedExpenses: [],

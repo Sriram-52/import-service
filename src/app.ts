@@ -18,7 +18,7 @@ async function main() {
 	// missed data
 	// await missedTimesheets();
 	// await missedInvoices();
-	// await updateEmpIds();
+	await updateEmpIds();
 	// await updateTimesheets();
 }
 

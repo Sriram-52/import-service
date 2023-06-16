@@ -105,6 +105,7 @@ export async function updateEmpIds() {
 	const promises = rows.map(async (row, idx) => {
 		const invoiceId = `IMP#${getCell(row, "B")}`;
 		const employeeId = getCell(row, "I");
+		const invoicedAmount = Number(getCell(row, "N"));
 		const invoiceRef = db.collection("INVOICES").doc(invoiceId);
 		const invoice = await invoiceRef.get();
 		if (!invoice.exists) {
@@ -116,11 +117,14 @@ export async function updateEmpIds() {
 			await new Promise((resolve) => setTimeout(resolve, 2000));
 		}
 		await invoiceRef.update({
-			employeeID: employeeId,
-			"externalDetails.toClient": false,
-			placementID: getCell(row, "F"),
+			// employeeID: employeeId,
+			// "externalDetails.toClient": false,
+			// placementID: getCell(row, "F"),
+
 			// placementID: admin.firestore.FieldValue.delete(),
 			// invoiceName: getCell(row, "K"),
+			// "externalDetails.externalAmount": invoicedAmount,
+			paymentDiscountAmount: 0,
 		});
 		console.log(`Updated invoice ${invoiceId}`);
 	});
