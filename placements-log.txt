@@ -1,0 +1,991 @@
+Total placements to import: 90
+Creating general section for Job Code-75
+Creating documents section for Job Code-75
+Creating work location section for Job Code-75
+Creating timesheet section for Job Code-75
+Creating client_details section for Job Code-75
+Creating invoices section for Job Code-75
+Creating recruitment_details section for Job Code-75
+Creating expense_details section for Job Code-75
+Creating payment_details section for Job Code-75
+Successfully imported Job Code-75
+--------------------------------------------------
+Creating general section for Job Code-53
+Creating documents section for Job Code-53
+Creating work location section for Job Code-53
+Creating timesheet section for Job Code-53
+Creating client_details section for Job Code-53
+Creating invoices section for Job Code-53
+Creating recruitment_details section for Job Code-53
+Creating expense_details section for Job Code-53
+Creating payment_details section for Job Code-53
+Successfully imported Job Code-53
+--------------------------------------------------
+Creating general section for Job Code-24
+Creating documents section for Job Code-24
+Creating work location section for Job Code-24
+Creating timesheet section for Job Code-24
+Creating client_details section for Job Code-24
+Creating invoices section for Job Code-24
+Creating recruitment_details section for Job Code-24
+Creating expense_details section for Job Code-24
+Creating payment_details section for Job Code-24
+Successfully imported Job Code-24
+--------------------------------------------------
+Creating general section for Jcode-7
+Creating documents section for Jcode-7
+Creating work location section for Jcode-7
+Creating timesheet section for Jcode-7
+Creating client_details section for Jcode-7
+Creating invoices section for Jcode-7
+Creating recruitment_details section for Jcode-7
+Creating expense_details section for Jcode-7
+Creating payment_details section for Jcode-7
+Successfully imported Jcode-7
+--------------------------------------------------
+Creating general section for Job Code-95
+Creating documents section for Job Code-95
+Creating work location section for Job Code-95
+Creating timesheet section for Job Code-95
+Creating client_details section for Job Code-95
+Creating invoices section for Job Code-95
+Creating recruitment_details section for Job Code-95
+Creating expense_details section for Job Code-95
+Creating payment_details section for Job Code-95
+Successfully imported Job Code-95
+--------------------------------------------------
+Creating general section for Jcode-2
+Creating documents section for Jcode-2
+Creating work location section for Jcode-2
+Creating timesheet section for Jcode-2
+Creating client_details section for Jcode-2
+Creating invoices section for Jcode-2
+Creating recruitment_details section for Jcode-2
+Creating expense_details section for Jcode-2
+Creating payment_details section for Jcode-2
+Successfully imported Jcode-2
+--------------------------------------------------
+Creating general section for Jcode-3
+Creating documents section for Jcode-3
+Creating work location section for Jcode-3
+Creating timesheet section for Jcode-3
+Creating client_details section for Jcode-3
+Creating invoices section for Jcode-3
+Creating recruitment_details section for Jcode-3
+Creating expense_details section for Jcode-3
+Creating payment_details section for Jcode-3
+Successfully imported Jcode-3
+--------------------------------------------------
+Creating general section for Job Code-74
+Creating documents section for Job Code-74
+Creating work location section for Job Code-74
+Creating timesheet section for Job Code-74
+Creating client_details section for Job Code-74
+Creating invoices section for Job Code-74
+Creating recruitment_details section for Job Code-74
+Creating expense_details section for Job Code-74
+Creating payment_details section for Job Code-74
+Successfully imported Job Code-74
+--------------------------------------------------
+Creating general section for Job Code-46
+Creating documents section for Job Code-46
+Creating work location section for Job Code-46
+Creating timesheet section for Job Code-46
+Creating client_details section for Job Code-46
+Creating invoices section for Job Code-46
+Creating recruitment_details section for Job Code-46
+Creating expense_details section for Job Code-46
+Creating payment_details section for Job Code-46
+Successfully imported Job Code-46
+--------------------------------------------------
+Creating general section for Job Code-91
+Creating documents section for Job Code-91
+Creating work location section for Job Code-91
+Creating timesheet section for Job Code-91
+Creating client_details section for Job Code-91
+Creating invoices section for Job Code-91
+Creating recruitment_details section for Job Code-91
+Creating expense_details section for Job Code-91
+Creating payment_details section for Job Code-91
+Successfully imported Job Code-91
+--------------------------------------------------
+Creating general section for Job Code-42
+Creating documents section for Job Code-42
+Creating work location section for Job Code-42
+Creating timesheet section for Job Code-42
+Creating client_details section for Job Code-42
+Creating invoices section for Job Code-42
+Creating recruitment_details section for Job Code-42
+Creating expense_details section for Job Code-42
+Creating payment_details section for Job Code-42
+Successfully imported Job Code-42
+--------------------------------------------------
+Creating general section for Jcode-4
+Creating documents section for Jcode-4
+Creating work location section for Jcode-4
+Creating timesheet section for Jcode-4
+Creating client_details section for Jcode-4
+Creating invoices section for Jcode-4
+Creating recruitment_details section for Jcode-4
+Creating expense_details section for Jcode-4
+Creating payment_details section for Jcode-4
+Successfully imported Jcode-4
+--------------------------------------------------
+Creating general section for Job Code-54
+Creating documents section for Job Code-54
+Creating work location section for Job Code-54
+Creating timesheet section for Job Code-54
+Creating client_details section for Job Code-54
+Creating invoices section for Job Code-54
+Creating recruitment_details section for Job Code-54
+Creating expense_details section for Job Code-54
+Creating payment_details section for Job Code-54
+Successfully imported Job Code-54
+--------------------------------------------------
+Creating general section for Job Code-21
+Creating documents section for Job Code-21
+Creating work location section for Job Code-21
+Creating timesheet section for Job Code-21
+Creating client_details section for Job Code-21
+Creating invoices section for Job Code-21
+Creating recruitment_details section for Job Code-21
+Creating expense_details section for Job Code-21
+Creating payment_details section for Job Code-21
+Successfully imported Job Code-21
+--------------------------------------------------
+Creating general section for Job Code-19
+Creating documents section for Job Code-19
+Creating work location section for Job Code-19
+Creating timesheet section for Job Code-19
+Creating client_details section for Job Code-19
+Creating invoices section for Job Code-19
+Creating recruitment_details section for Job Code-19
+Creating expense_details section for Job Code-19
+Creating payment_details section for Job Code-19
+Successfully imported Job Code-19
+--------------------------------------------------
+Creating general section for Job Code-85
+Creating documents section for Job Code-85
+Creating work location section for Job Code-85
+Creating timesheet section for Job Code-85
+Creating client_details section for Job Code-85
+Creating invoices section for Job Code-85
+Creating recruitment_details section for Job Code-85
+Creating expense_details section for Job Code-85
+Creating payment_details section for Job Code-85
+Successfully imported Job Code-85
+--------------------------------------------------
+Creating general section for Jcode-5
+Creating documents section for Jcode-5
+Creating work location section for Jcode-5
+Creating timesheet section for Jcode-5
+Creating client_details section for Jcode-5
+Creating invoices section for Jcode-5
+Creating recruitment_details section for Jcode-5
+Creating expense_details section for Jcode-5
+Creating payment_details section for Jcode-5
+Successfully imported Jcode-5
+--------------------------------------------------
+Creating general section for Jcode-6
+Creating documents section for Jcode-6
+Creating work location section for Jcode-6
+Creating timesheet section for Jcode-6
+Creating client_details section for Jcode-6
+Creating invoices section for Jcode-6
+Creating recruitment_details section for Jcode-6
+Creating expense_details section for Jcode-6
+Creating payment_details section for Jcode-6
+Successfully imported Jcode-6
+--------------------------------------------------
+Creating general section for Job Code-35
+Creating documents section for Job Code-35
+Creating work location section for Job Code-35
+Creating timesheet section for Job Code-35
+Creating client_details section for Job Code-35
+Creating invoices section for Job Code-35
+Creating recruitment_details section for Job Code-35
+Creating expense_details section for Job Code-35
+Creating payment_details section for Job Code-35
+Successfully imported Job Code-35
+--------------------------------------------------
+Creating general section for Job Code-94
+Creating documents section for Job Code-94
+Creating work location section for Job Code-94
+Creating timesheet section for Job Code-94
+Creating client_details section for Job Code-94
+Creating invoices section for Job Code-94
+Creating recruitment_details section for Job Code-94
+Creating expense_details section for Job Code-94
+Creating payment_details section for Job Code-94
+Successfully imported Job Code-94
+--------------------------------------------------
+Creating general section for Job Code-41
+Creating documents section for Job Code-41
+Creating work location section for Job Code-41
+Creating timesheet section for Job Code-41
+Creating client_details section for Job Code-41
+Creating invoices section for Job Code-41
+Creating recruitment_details section for Job Code-41
+Creating expense_details section for Job Code-41
+Creating payment_details section for Job Code-41
+Successfully imported Job Code-41
+--------------------------------------------------
+Creating general section for Job Code-20
+Creating documents section for Job Code-20
+Creating work location section for Job Code-20
+Creating timesheet section for Job Code-20
+Creating client_details section for Job Code-20
+Creating invoices section for Job Code-20
+Creating recruitment_details section for Job Code-20
+Creating expense_details section for Job Code-20
+Creating payment_details section for Job Code-20
+Successfully imported Job Code-20
+--------------------------------------------------
+Creating general section for Job Code-88
+Creating documents section for Job Code-88
+Creating work location section for Job Code-88
+Creating timesheet section for Job Code-88
+Creating client_details section for Job Code-88
+Creating invoices section for Job Code-88
+Creating recruitment_details section for Job Code-88
+Creating expense_details section for Job Code-88
+Creating payment_details section for Job Code-88
+Successfully imported Job Code-88
+--------------------------------------------------
+Creating general section for Job Code-87
+Creating documents section for Job Code-87
+Creating work location section for Job Code-87
+Creating timesheet section for Job Code-87
+Creating client_details section for Job Code-87
+Creating invoices section for Job Code-87
+Creating recruitment_details section for Job Code-87
+Creating expense_details section for Job Code-87
+Creating payment_details section for Job Code-87
+Successfully imported Job Code-87
+--------------------------------------------------
+Creating general section for Job Code-32
+Creating documents section for Job Code-32
+Creating work location section for Job Code-32
+Creating timesheet section for Job Code-32
+Creating client_details section for Job Code-32
+Creating invoices section for Job Code-32
+Creating recruitment_details section for Job Code-32
+Creating expense_details section for Job Code-32
+Creating payment_details section for Job Code-32
+Successfully imported Job Code-32
+--------------------------------------------------
+Creating general section for Job Code-92
+Creating documents section for Job Code-92
+Creating work location section for Job Code-92
+Creating timesheet section for Job Code-92
+Creating client_details section for Job Code-92
+Creating invoices section for Job Code-92
+Creating recruitment_details section for Job Code-92
+Creating expense_details section for Job Code-92
+Creating payment_details section for Job Code-92
+Successfully imported Job Code-92
+--------------------------------------------------
+Creating general section for Job Code-89
+Creating documents section for Job Code-89
+Creating work location section for Job Code-89
+Creating timesheet section for Job Code-89
+Creating client_details section for Job Code-89
+Creating invoices section for Job Code-89
+Creating recruitment_details section for Job Code-89
+Creating expense_details section for Job Code-89
+Creating payment_details section for Job Code-89
+Successfully imported Job Code-89
+--------------------------------------------------
+Creating general section for Job Code-33
+Creating documents section for Job Code-33
+Creating work location section for Job Code-33
+Creating timesheet section for Job Code-33
+Creating client_details section for Job Code-33
+Creating invoices section for Job Code-33
+Creating recruitment_details section for Job Code-33
+Creating expense_details section for Job Code-33
+Creating payment_details section for Job Code-33
+Successfully imported Job Code-33
+--------------------------------------------------
+Creating general section for Job Code-66
+Creating documents section for Job Code-66
+Creating work location section for Job Code-66
+Creating timesheet section for Job Code-66
+Creating client_details section for Job Code-66
+Creating invoices section for Job Code-66
+Creating recruitment_details section for Job Code-66
+Creating expense_details section for Job Code-66
+Creating payment_details section for Job Code-66
+Successfully imported Job Code-66
+--------------------------------------------------
+Creating general section for Job Code-86
+Creating documents section for Job Code-86
+Creating work location section for Job Code-86
+Creating timesheet section for Job Code-86
+Creating client_details section for Job Code-86
+Creating invoices section for Job Code-86
+Creating recruitment_details section for Job Code-86
+Creating expense_details section for Job Code-86
+Creating payment_details section for Job Code-86
+Successfully imported Job Code-86
+--------------------------------------------------
+Creating general section for Job Code-72
+Creating documents section for Job Code-72
+Creating work location section for Job Code-72
+Creating timesheet section for Job Code-72
+Creating client_details section for Job Code-72
+Creating invoices section for Job Code-72
+Creating recruitment_details section for Job Code-72
+Creating expense_details section for Job Code-72
+Creating payment_details section for Job Code-72
+Successfully imported Job Code-72
+--------------------------------------------------
+Creating general section for Job Code-56
+Creating documents section for Job Code-56
+Creating work location section for Job Code-56
+Creating timesheet section for Job Code-56
+Creating client_details section for Job Code-56
+Creating invoices section for Job Code-56
+Creating recruitment_details section for Job Code-56
+Creating expense_details section for Job Code-56
+Creating payment_details section for Job Code-56
+Successfully imported Job Code-56
+--------------------------------------------------
+Creating general section for Job Code-93
+Creating documents section for Job Code-93
+Creating work location section for Job Code-93
+Creating timesheet section for Job Code-93
+Creating client_details section for Job Code-93
+Creating invoices section for Job Code-93
+Creating recruitment_details section for Job Code-93
+Creating expense_details section for Job Code-93
+Creating payment_details section for Job Code-93
+Successfully imported Job Code-93
+--------------------------------------------------
+Creating general section for Job Code-90
+Creating documents section for Job Code-90
+Creating work location section for Job Code-90
+Creating timesheet section for Job Code-90
+Creating client_details section for Job Code-90
+Creating invoices section for Job Code-90
+Creating recruitment_details section for Job Code-90
+Creating expense_details section for Job Code-90
+Creating payment_details section for Job Code-90
+Successfully imported Job Code-90
+--------------------------------------------------
+Creating general section for Jcode-1
+Creating documents section for Jcode-1
+Creating work location section for Jcode-1
+Creating timesheet section for Jcode-1
+Creating client_details section for Jcode-1
+Creating invoices section for Jcode-1
+Creating recruitment_details section for Jcode-1
+Creating expense_details section for Jcode-1
+Creating payment_details section for Jcode-1
+Successfully imported Jcode-1
+--------------------------------------------------
+Creating general section for Job Code-28
+Creating documents section for Job Code-28
+Creating work location section for Job Code-28
+Creating timesheet section for Job Code-28
+Creating client_details section for Job Code-28
+Creating invoices section for Job Code-28
+Creating recruitment_details section for Job Code-28
+Creating expense_details section for Job Code-28
+Creating payment_details section for Job Code-28
+Successfully imported Job Code-28
+--------------------------------------------------
+Creating general section for Job Code-17
+Creating documents section for Job Code-17
+Creating work location section for Job Code-17
+Creating timesheet section for Job Code-17
+Creating client_details section for Job Code-17
+Creating invoices section for Job Code-17
+Creating recruitment_details section for Job Code-17
+Creating expense_details section for Job Code-17
+Creating payment_details section for Job Code-17
+Successfully imported Job Code-17
+--------------------------------------------------
+Creating general section for Job Code-48
+Creating documents section for Job Code-48
+Creating work location section for Job Code-48
+Creating timesheet section for Job Code-48
+Creating client_details section for Job Code-48
+Creating invoices section for Job Code-48
+Creating recruitment_details section for Job Code-48
+Creating expense_details section for Job Code-48
+Creating payment_details section for Job Code-48
+Successfully imported Job Code-48
+--------------------------------------------------
+Creating general section for Job Code-63
+Creating documents section for Job Code-63
+Creating work location section for Job Code-63
+Creating timesheet section for Job Code-63
+Creating client_details section for Job Code-63
+Creating invoices section for Job Code-63
+Creating recruitment_details section for Job Code-63
+Creating expense_details section for Job Code-63
+Creating payment_details section for Job Code-63
+Successfully imported Job Code-63
+--------------------------------------------------
+Creating general section for Job Code-76
+Creating documents section for Job Code-76
+Creating work location section for Job Code-76
+Creating timesheet section for Job Code-76
+Creating client_details section for Job Code-76
+Creating invoices section for Job Code-76
+Creating recruitment_details section for Job Code-76
+Creating expense_details section for Job Code-76
+Creating payment_details section for Job Code-76
+Successfully imported Job Code-76
+--------------------------------------------------
+Creating general section for Job Code-58
+Creating documents section for Job Code-58
+Creating work location section for Job Code-58
+Creating timesheet section for Job Code-58
+Creating client_details section for Job Code-58
+Creating invoices section for Job Code-58
+Creating recruitment_details section for Job Code-58
+Creating expense_details section for Job Code-58
+Creating payment_details section for Job Code-58
+Successfully imported Job Code-58
+--------------------------------------------------
+Creating general section for Job Code-52
+Creating documents section for Job Code-52
+Creating work location section for Job Code-52
+Creating timesheet section for Job Code-52
+Creating client_details section for Job Code-52
+Creating invoices section for Job Code-52
+Creating recruitment_details section for Job Code-52
+Creating expense_details section for Job Code-52
+Creating payment_details section for Job Code-52
+Successfully imported Job Code-52
+--------------------------------------------------
+Creating general section for Job Code-16
+Creating documents section for Job Code-16
+Creating work location section for Job Code-16
+Creating timesheet section for Job Code-16
+Creating client_details section for Job Code-16
+Creating invoices section for Job Code-16
+Creating recruitment_details section for Job Code-16
+Creating expense_details section for Job Code-16
+Creating payment_details section for Job Code-16
+Successfully imported Job Code-16
+--------------------------------------------------
+Creating general section for Jcode-8
+Creating documents section for Jcode-8
+Creating work location section for Jcode-8
+Creating timesheet section for Jcode-8
+Creating client_details section for Jcode-8
+Creating invoices section for Jcode-8
+Creating recruitment_details section for Jcode-8
+Creating expense_details section for Jcode-8
+Creating payment_details section for Jcode-8
+Successfully imported Jcode-8
+--------------------------------------------------
+Creating general section for Jcode-9
+Creating documents section for Jcode-9
+Creating work location section for Jcode-9
+Creating timesheet section for Jcode-9
+Creating client_details section for Jcode-9
+Creating invoices section for Jcode-9
+Creating recruitment_details section for Jcode-9
+Creating expense_details section for Jcode-9
+Creating payment_details section for Jcode-9
+Successfully imported Jcode-9
+--------------------------------------------------
+Creating general section for Job Code-61
+Creating documents section for Job Code-61
+Creating work location section for Job Code-61
+Creating timesheet section for Job Code-61
+Creating client_details section for Job Code-61
+Creating invoices section for Job Code-61
+Creating recruitment_details section for Job Code-61
+Creating expense_details section for Job Code-61
+Creating payment_details section for Job Code-61
+Successfully imported Job Code-61
+--------------------------------------------------
+Creating general section for Job Code-45
+Creating documents section for Job Code-45
+Creating work location section for Job Code-45
+Creating timesheet section for Job Code-45
+Creating client_details section for Job Code-45
+Creating invoices section for Job Code-45
+Creating recruitment_details section for Job Code-45
+Creating expense_details section for Job Code-45
+Creating payment_details section for Job Code-45
+Successfully imported Job Code-45
+--------------------------------------------------
+Creating general section for Job Code-38
+Creating documents section for Job Code-38
+Creating work location section for Job Code-38
+Creating timesheet section for Job Code-38
+Creating client_details section for Job Code-38
+Creating invoices section for Job Code-38
+Creating recruitment_details section for Job Code-38
+Creating expense_details section for Job Code-38
+Creating payment_details section for Job Code-38
+Successfully imported Job Code-38
+--------------------------------------------------
+Creating general section for Jcode-10
+Creating documents section for Jcode-10
+Creating work location section for Jcode-10
+Creating timesheet section for Jcode-10
+Creating client_details section for Jcode-10
+Creating invoices section for Jcode-10
+Creating recruitment_details section for Jcode-10
+Creating expense_details section for Jcode-10
+Creating payment_details section for Jcode-10
+Successfully imported Jcode-10
+--------------------------------------------------
+Creating general section for Jcode-11
+Creating documents section for Jcode-11
+Creating work location section for Jcode-11
+Creating timesheet section for Jcode-11
+Creating client_details section for Jcode-11
+Creating invoices section for Jcode-11
+Creating recruitment_details section for Jcode-11
+Creating expense_details section for Jcode-11
+Creating payment_details section for Jcode-11
+Successfully imported Jcode-11
+--------------------------------------------------
+Creating general section for Job Code-43
+Creating documents section for Job Code-43
+Creating work location section for Job Code-43
+Creating timesheet section for Job Code-43
+Creating client_details section for Job Code-43
+Creating invoices section for Job Code-43
+Creating recruitment_details section for Job Code-43
+Creating expense_details section for Job Code-43
+Creating payment_details section for Job Code-43
+Successfully imported Job Code-43
+--------------------------------------------------
+Creating general section for Job Code-55
+Creating documents section for Job Code-55
+Creating work location section for Job Code-55
+Creating timesheet section for Job Code-55
+Creating client_details section for Job Code-55
+Creating invoices section for Job Code-55
+Creating recruitment_details section for Job Code-55
+Creating expense_details section for Job Code-55
+Creating payment_details section for Job Code-55
+Successfully imported Job Code-55
+--------------------------------------------------
+Creating general section for Job Code-73
+Creating documents section for Job Code-73
+Creating work location section for Job Code-73
+Creating timesheet section for Job Code-73
+Creating client_details section for Job Code-73
+Creating invoices section for Job Code-73
+Creating recruitment_details section for Job Code-73
+Creating expense_details section for Job Code-73
+Creating payment_details section for Job Code-73
+Successfully imported Job Code-73
+--------------------------------------------------
+Creating general section for Job Code-29
+Creating documents section for Job Code-29
+Creating work location section for Job Code-29
+Creating timesheet section for Job Code-29
+Creating client_details section for Job Code-29
+Creating invoices section for Job Code-29
+Creating recruitment_details section for Job Code-29
+Creating expense_details section for Job Code-29
+Creating payment_details section for Job Code-29
+Successfully imported Job Code-29
+--------------------------------------------------
+Creating general section for Job Code-62
+Creating documents section for Job Code-62
+Creating work location section for Job Code-62
+Creating timesheet section for Job Code-62
+Creating client_details section for Job Code-62
+Creating invoices section for Job Code-62
+Creating recruitment_details section for Job Code-62
+Creating expense_details section for Job Code-62
+Creating payment_details section for Job Code-62
+Successfully imported Job Code-62
+--------------------------------------------------
+Creating general section for Job Code-67
+Creating documents section for Job Code-67
+Creating work location section for Job Code-67
+Creating timesheet section for Job Code-67
+Creating client_details section for Job Code-67
+Creating invoices section for Job Code-67
+Creating recruitment_details section for Job Code-67
+Creating expense_details section for Job Code-67
+Creating payment_details section for Job Code-67
+Successfully imported Job Code-67
+--------------------------------------------------
+Creating general section for Job Code-50
+Creating documents section for Job Code-50
+Creating work location section for Job Code-50
+Creating timesheet section for Job Code-50
+Creating client_details section for Job Code-50
+Creating invoices section for Job Code-50
+Creating recruitment_details section for Job Code-50
+Creating expense_details section for Job Code-50
+Creating payment_details section for Job Code-50
+Successfully imported Job Code-50
+--------------------------------------------------
+Creating general section for Job Code-78
+Creating documents section for Job Code-78
+Creating work location section for Job Code-78
+Creating timesheet section for Job Code-78
+Creating client_details section for Job Code-78
+Creating invoices section for Job Code-78
+Creating recruitment_details section for Job Code-78
+Creating expense_details section for Job Code-78
+Creating payment_details section for Job Code-78
+Successfully imported Job Code-78
+--------------------------------------------------
+Creating general section for Job Code-83
+Creating documents section for Job Code-83
+Creating work location section for Job Code-83
+Creating timesheet section for Job Code-83
+Creating client_details section for Job Code-83
+Creating invoices section for Job Code-83
+Creating recruitment_details section for Job Code-83
+Creating expense_details section for Job Code-83
+Creating payment_details section for Job Code-83
+Successfully imported Job Code-83
+--------------------------------------------------
+Creating general section for Job Code-31
+Creating documents section for Job Code-31
+Creating work location section for Job Code-31
+Creating timesheet section for Job Code-31
+Creating client_details section for Job Code-31
+Creating invoices section for Job Code-31
+Creating recruitment_details section for Job Code-31
+Creating expense_details section for Job Code-31
+Creating payment_details section for Job Code-31
+Successfully imported Job Code-31
+--------------------------------------------------
+Creating general section for Job Code-30
+Creating documents section for Job Code-30
+Creating work location section for Job Code-30
+Creating timesheet section for Job Code-30
+Creating client_details section for Job Code-30
+Creating invoices section for Job Code-30
+Creating recruitment_details section for Job Code-30
+Creating expense_details section for Job Code-30
+Creating payment_details section for Job Code-30
+Successfully imported Job Code-30
+--------------------------------------------------
+Creating general section for Job Code-44
+Creating documents section for Job Code-44
+Creating work location section for Job Code-44
+Creating timesheet section for Job Code-44
+Creating client_details section for Job Code-44
+Creating invoices section for Job Code-44
+Creating recruitment_details section for Job Code-44
+Creating expense_details section for Job Code-44
+Creating payment_details section for Job Code-44
+Successfully imported Job Code-44
+--------------------------------------------------
+Creating general section for Job Code-25
+Creating documents section for Job Code-25
+Creating work location section for Job Code-25
+Creating timesheet section for Job Code-25
+Creating client_details section for Job Code-25
+Creating invoices section for Job Code-25
+Creating recruitment_details section for Job Code-25
+Creating expense_details section for Job Code-25
+Creating payment_details section for Job Code-25
+Successfully imported Job Code-25
+--------------------------------------------------
+Creating general section for Job Code-49
+Creating documents section for Job Code-49
+Creating work location section for Job Code-49
+Creating timesheet section for Job Code-49
+Creating client_details section for Job Code-49
+Creating invoices section for Job Code-49
+Creating recruitment_details section for Job Code-49
+Creating expense_details section for Job Code-49
+Creating payment_details section for Job Code-49
+Successfully imported Job Code-49
+--------------------------------------------------
+Creating general section for Job Code-64
+Creating documents section for Job Code-64
+Creating work location section for Job Code-64
+Creating timesheet section for Job Code-64
+Creating client_details section for Job Code-64
+Creating invoices section for Job Code-64
+Creating recruitment_details section for Job Code-64
+Creating expense_details section for Job Code-64
+Creating payment_details section for Job Code-64
+Successfully imported Job Code-64
+--------------------------------------------------
+Creating general section for Jcode-12
+Creating documents section for Jcode-12
+Creating work location section for Jcode-12
+Creating timesheet section for Jcode-12
+Creating client_details section for Jcode-12
+Creating invoices section for Jcode-12
+Creating recruitment_details section for Jcode-12
+Creating expense_details section for Jcode-12
+Creating payment_details section for Jcode-12
+Successfully imported Jcode-12
+--------------------------------------------------
+Creating general section for Job Code-47
+Creating documents section for Job Code-47
+Creating work location section for Job Code-47
+Creating timesheet section for Job Code-47
+Creating client_details section for Job Code-47
+Creating invoices section for Job Code-47
+Creating recruitment_details section for Job Code-47
+Creating expense_details section for Job Code-47
+Creating payment_details section for Job Code-47
+Successfully imported Job Code-47
+--------------------------------------------------
+Creating general section for Job Code-36
+Creating documents section for Job Code-36
+Creating work location section for Job Code-36
+Creating timesheet section for Job Code-36
+Creating client_details section for Job Code-36
+Creating invoices section for Job Code-36
+Creating recruitment_details section for Job Code-36
+Creating expense_details section for Job Code-36
+Creating payment_details section for Job Code-36
+Successfully imported Job Code-36
+--------------------------------------------------
+Creating general section for Job Code-37
+Creating documents section for Job Code-37
+Creating work location section for Job Code-37
+Creating timesheet section for Job Code-37
+Creating client_details section for Job Code-37
+Creating invoices section for Job Code-37
+Creating recruitment_details section for Job Code-37
+Creating expense_details section for Job Code-37
+Creating payment_details section for Job Code-37
+Successfully imported Job Code-37
+--------------------------------------------------
+Creating general section for Job Code-69
+Creating documents section for Job Code-69
+Creating work location section for Job Code-69
+Creating timesheet section for Job Code-69
+Creating client_details section for Job Code-69
+Creating invoices section for Job Code-69
+Creating recruitment_details section for Job Code-69
+Creating expense_details section for Job Code-69
+Creating payment_details section for Job Code-69
+Successfully imported Job Code-69
+--------------------------------------------------
+Creating general section for Job Code-71
+Creating documents section for Job Code-71
+Creating work location section for Job Code-71
+Creating timesheet section for Job Code-71
+Creating client_details section for Job Code-71
+Creating invoices section for Job Code-71
+Creating recruitment_details section for Job Code-71
+Creating expense_details section for Job Code-71
+Creating payment_details section for Job Code-71
+Successfully imported Job Code-71
+--------------------------------------------------
+Creating general section for Job Code-65
+Creating documents section for Job Code-65
+Creating work location section for Job Code-65
+Creating timesheet section for Job Code-65
+Creating client_details section for Job Code-65
+Creating invoices section for Job Code-65
+Creating recruitment_details section for Job Code-65
+Creating expense_details section for Job Code-65
+Creating payment_details section for Job Code-65
+Successfully imported Job Code-65
+--------------------------------------------------
+Creating general section for Job Code-39
+Creating documents section for Job Code-39
+Creating work location section for Job Code-39
+Creating timesheet section for Job Code-39
+Creating client_details section for Job Code-39
+Creating invoices section for Job Code-39
+Creating recruitment_details section for Job Code-39
+Creating expense_details section for Job Code-39
+Creating payment_details section for Job Code-39
+Successfully imported Job Code-39
+--------------------------------------------------
+Creating general section for Job Code-82
+Creating documents section for Job Code-82
+Creating work location section for Job Code-82
+Creating timesheet section for Job Code-82
+Creating client_details section for Job Code-82
+Creating invoices section for Job Code-82
+Creating recruitment_details section for Job Code-82
+Creating expense_details section for Job Code-82
+Creating payment_details section for Job Code-82
+Successfully imported Job Code-82
+--------------------------------------------------
+Creating general section for Job Code-27
+Creating documents section for Job Code-27
+Creating work location section for Job Code-27
+Creating timesheet section for Job Code-27
+Creating client_details section for Job Code-27
+Creating invoices section for Job Code-27
+Creating recruitment_details section for Job Code-27
+Creating expense_details section for Job Code-27
+Creating payment_details section for Job Code-27
+Successfully imported Job Code-27
+--------------------------------------------------
+Creating general section for Job Code-77
+Creating documents section for Job Code-77
+Creating work location section for Job Code-77
+Creating timesheet section for Job Code-77
+Creating client_details section for Job Code-77
+Creating invoices section for Job Code-77
+Creating recruitment_details section for Job Code-77
+Creating expense_details section for Job Code-77
+Creating payment_details section for Job Code-77
+Successfully imported Job Code-77
+--------------------------------------------------
+Creating general section for Job Code-68
+Creating documents section for Job Code-68
+Creating work location section for Job Code-68
+Creating timesheet section for Job Code-68
+Creating client_details section for Job Code-68
+Creating invoices section for Job Code-68
+Creating recruitment_details section for Job Code-68
+Creating expense_details section for Job Code-68
+Creating payment_details section for Job Code-68
+Successfully imported Job Code-68
+--------------------------------------------------
+Creating general section for Job Code-40
+Creating documents section for Job Code-40
+Creating work location section for Job Code-40
+Creating timesheet section for Job Code-40
+Creating client_details section for Job Code-40
+Creating invoices section for Job Code-40
+Creating recruitment_details section for Job Code-40
+Creating expense_details section for Job Code-40
+Creating payment_details section for Job Code-40
+Successfully imported Job Code-40
+--------------------------------------------------
+Creating general section for Job Code-57
+Creating documents section for Job Code-57
+Creating work location section for Job Code-57
+Creating timesheet section for Job Code-57
+Creating client_details section for Job Code-57
+Creating invoices section for Job Code-57
+Creating recruitment_details section for Job Code-57
+Creating expense_details section for Job Code-57
+Creating payment_details section for Job Code-57
+Successfully imported Job Code-57
+--------------------------------------------------
+Creating general section for Job Code-28
+Creating documents section for Job Code-28
+Creating work location section for Job Code-28
+Creating timesheet section for Job Code-28
+Creating client_details section for Job Code-28
+Creating invoices section for Job Code-28
+Creating recruitment_details section for Job Code-28
+Creating expense_details section for Job Code-28
+Creating payment_details section for Job Code-28
+Successfully imported Job Code-28
+--------------------------------------------------
+Creating general section for Job Code-26
+Creating documents section for Job Code-26
+Creating work location section for Job Code-26
+Creating timesheet section for Job Code-26
+Creating client_details section for Job Code-26
+Creating invoices section for Job Code-26
+Creating recruitment_details section for Job Code-26
+Creating expense_details section for Job Code-26
+Creating payment_details section for Job Code-26
+Successfully imported Job Code-26
+--------------------------------------------------
+Creating general section for Job Code-51
+Creating documents section for Job Code-51
+Creating work location section for Job Code-51
+Creating timesheet section for Job Code-51
+Creating client_details section for Job Code-51
+Creating invoices section for Job Code-51
+Creating recruitment_details section for Job Code-51
+Creating expense_details section for Job Code-51
+Creating payment_details section for Job Code-51
+Successfully imported Job Code-51
+--------------------------------------------------
+Creating general section for Jcode-14
+Creating documents section for Jcode-14
+Creating work location section for Jcode-14
+Creating timesheet section for Jcode-14
+Creating client_details section for Jcode-14
+Creating invoices section for Jcode-14
+Creating recruitment_details section for Jcode-14
+Creating expense_details section for Jcode-14
+Creating payment_details section for Jcode-14
+Successfully imported Jcode-14
+--------------------------------------------------
+Creating general section for Job Code-34
+Creating documents section for Job Code-34
+Creating work location section for Job Code-34
+Creating timesheet section for Job Code-34
+Creating client_details section for Job Code-34
+Creating invoices section for Job Code-34
+Creating recruitment_details section for Job Code-34
+Creating expense_details section for Job Code-34
+Creating payment_details section for Job Code-34
+Successfully imported Job Code-34
+--------------------------------------------------
+Creating general section for Job Code-16
+Creating documents section for Job Code-16
+Creating work location section for Job Code-16
+Creating timesheet section for Job Code-16
+Creating client_details section for Job Code-16
+Creating invoices section for Job Code-16
+Creating recruitment_details section for Job Code-16
+Creating expense_details section for Job Code-16
+Creating payment_details section for Job Code-16
+Successfully imported Job Code-16
+--------------------------------------------------
+Creating general section for Job Code-18
+Creating documents section for Job Code-18
+Creating work location section for Job Code-18
+Creating timesheet section for Job Code-18
+Creating client_details section for Job Code-18
+Creating invoices section for Job Code-18
+Creating recruitment_details section for Job Code-18
+Creating expense_details section for Job Code-18
+Creating payment_details section for Job Code-18
+Successfully imported Job Code-18
+--------------------------------------------------
+Creating general section for Job Code-70
+Creating documents section for Job Code-70
+Creating work location section for Job Code-70
+Creating timesheet section for Job Code-70
+Creating client_details section for Job Code-70
+Creating invoices section for Job Code-70
+Creating recruitment_details section for Job Code-70
+Creating expense_details section for Job Code-70
+Creating payment_details section for Job Code-70
+Successfully imported Job Code-70
+--------------------------------------------------
+Creating general section for Job Code-84
+Creating documents section for Job Code-84
+Creating work location section for Job Code-84
+Creating timesheet section for Job Code-84
+Creating client_details section for Job Code-84
+Creating invoices section for Job Code-84
+Creating recruitment_details section for Job Code-84
+Creating expense_details section for Job Code-84
+Creating payment_details section for Job Code-84
+Successfully imported Job Code-84
+--------------------------------------------------
+Creating general section for Job Code-23
+Creating documents section for Job Code-23
+Creating work location section for Job Code-23
+Creating timesheet section for Job Code-23
+Creating client_details section for Job Code-23
+Creating invoices section for Job Code-23
+Creating recruitment_details section for Job Code-23
+Creating expense_details section for Job Code-23
+Creating payment_details section for Job Code-23
+Successfully imported Job Code-23
+--------------------------------------------------
+Creating general section for Job Code-81
+Creating documents section for Job Code-81
+Creating work location section for Job Code-81
+Creating timesheet section for Job Code-81
+Creating client_details section for Job Code-81
+Creating invoices section for Job Code-81
+Creating recruitment_details section for Job Code-81
+Creating expense_details section for Job Code-81
+Creating payment_details section for Job Code-81
+Successfully imported Job Code-81
+--------------------------------------------------

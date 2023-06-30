@@ -173,8 +173,8 @@ export async function transformTimesheetsData(): Promise<Models.TimeSheets[]> {
 			const attachment = reqAttachments[0];
 			data.attachmentDetails = {
 				publicURL: getCell(attachment, "C").replace(
-					"Timesheet_attachment_folders/",
-					""
+					"Timesheet_attachment_folders/timesheet_approvals/",
+					"timesheet_approvals_2/"
 				),
 				sourcePath: getCell(attachment, "B"),
 			};

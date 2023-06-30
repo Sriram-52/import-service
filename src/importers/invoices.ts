@@ -6,6 +6,7 @@ import type { Models } from "../models";
 import path from "path";
 import Excel from "exceljs";
 import fs from "fs";
+import missedInvoicesData from "./missed-invoices.json";
 
 async function getNotifiersData(clientId: string, ids: string[]) {
 	try {
@@ -52,23 +53,48 @@ export async function deleteCollection(docPath: string) {
 		});
 }
 
-export async function deleteInvoices() {
-	// const invoices = await transformInvoicesData();
-	// console.log(`Total invoices to delete: ${invoices.length}`);
-	// const promises = invoices.map(async (invoice, index) => {
-	// 	try {
-	// 		if (index % 400 === 0) {
-	// 			console.log(`Sleeping for 2 seconds`);
-	// 			await new Promise((resolve) => setTimeout(resolve, 2000));
-	// 		}
-	// 		await deleteCollection(`INVOICES/${invoice.invoiceNumber}`);
-	// 		console.log(`Deleted invoice ${invoice.invoiceNumber}`);
-	// 	} catch (error) {
-	// 		console.log(error);
-	// 	}
-	// });
-	// await Promise.all(promises);
-	// console.log(`Deleted ${invoices.length} invoices`);
+export async function updatedInvoices() {
+	const data = await transformInvoicesData();
+	const promises = data.map(async (invoice) => {
+		const invoiceId = invoice.invoice.id;
+		const invoiceRef = db.collection("INVOICES").doc(invoiceId);
+		await invoiceRef.update({
+			subTotal: invoice.invoice.subTotal,
+		});
+		return "updated invoice " + invoiceId;
+	});
+	await Promise.all(promises);
+	console.log(`Done`);
+}
+
+export async function deleteMissedInvoices() {
+	const data = await transformInvoicesData();
+	const invoiceIds = data
+		.filter((invoice) => invoice.invoice.employeeID === "[object Object]")
+		.map((invoice) => invoice.invoice.id);
+	console.log(`Deleting ${invoiceIds.length} invoices`);
+	// console.log(invoiceIds);
+	const promises = invoiceIds.map(async (invoiceId) => {
+		const invoiceRef = db.collection("INVOICES").doc(invoiceId);
+		const invoice = await invoiceRef.get();
+		if (!invoice.exists) {
+			console.log(`Invoice ${invoiceId} does not exist`);
+			return;
+		}
+		const payments = await invoiceRef.collection("PAYMENTS_HISTORY").get();
+		if (payments.docs.length > 0) {
+			console.log(`Invoice ${invoiceId} has payments`);
+			console.log(`Deleting payments`);
+			await Promise.all(
+				payments.docs.map(async (doc) => {
+					await doc.ref.delete();
+				})
+			);
+		}
+		await invoiceRef.delete();
+		console.log(`Deleted invoice ${invoiceId}`);
+	});
+	await Promise.all(promises);
 }
 
 export async function missedInvoices() {
@@ -120,11 +146,10 @@ export async function updateEmpIds() {
 			// employeeID: employeeId,
 			// "externalDetails.toClient": false,
 			// placementID: getCell(row, "F"),
-
 			// placementID: admin.firestore.FieldValue.delete(),
 			// invoiceName: getCell(row, "K"),
 			// "externalDetails.externalAmount": invoicedAmount,
-			paymentDiscountAmount: 0,
+			// paymentDiscountAmount: 0,
 		});
 		console.log(`Updated invoice ${invoiceId}`);
 	});
@@ -133,13 +158,24 @@ export async function updateEmpIds() {
 }
 
 export async function importInvoices() {
-	const data = await transformInvoicesData();
+	const data = (await transformInvoicesData()).filter(
+		(invoice) => invoice.invoice.id === "IMP#INVOICE#1158"
+	);
 	console.log(`Total invoices to import: ${data.length}`);
 	const companyRef = db.collection("COMPANY_CONFIG").doc("details");
 	const company = (await companyRef.get()).data();
 	for await (const item of data) {
 		try {
 			const invoiceRef = db.collection(`INVOICES`).doc(item.invoice.id);
+			const invoice = await invoiceRef.get();
+			if (invoice.exists) {
+				console.log(`Invoice ${item.invoice.id} already exists`);
+				invoice.ref.update({
+					"externalDetails.externalAmount":
+						item.invoice.externalDetails.externalAmount,
+				});
+				continue;
+			}
 			const placementRef = db.doc(
 				`EMPLOYEES/${item.invoice.employeeID}/PLACEMENTS/${item.invoice.placementID}`
 			);
@@ -162,9 +198,13 @@ export async function importInvoices() {
 			await invoiceRef.set(updatedInvoice);
 			console.log(`Now creating payments history`);
 			for await (const payment of item.payments) {
+				const existingDataPromises = (
+					await invoiceRef.collection("PAYMENTS_HISTORY").get()
+				).docs.map((d) => d.ref.delete());
 				const paymentsHistoryRef = invoiceRef
 					.collection("PAYMENTS_HISTORY")
 					.doc();
+				await Promise.all(existingDataPromises);
 				const paymentsHistory: Models.PaymentHistory = {
 					...payment,
 					id: paymentsHistoryRef.id,

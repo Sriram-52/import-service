@@ -1,10 +1,11 @@
 import path from "path";
 import { admin, db } from "../db/admin";
 import { transformTimesheetsData } from "../mappers/timesheets";
-import { getCell, parseDate, uploadFile } from "../utils";
+import { getCell, parseDate, reportingManagerId, uploadFile } from "../utils";
 import Excel from "exceljs";
 import fs from "fs";
 // import log4js from "log4js";
+import timesheetIds from "../timesheet-ids.json";
 
 // log4js.configure({
 // 	appenders: { timesheets: { type: "file", filename: "timesheets.log" } },
@@ -55,49 +56,100 @@ export const deleteTimesheets = async (employeeID: string) => {
 };
 
 export async function updateTimesheets() {
-	const filePath = path.join(__dirname, "../../data/timesheets.xlsx");
-	const workbook = new Excel.Workbook();
-	const content = await workbook.xlsx.readFile(filePath);
+	// const filePath = path.join(__dirname, "../../data/timesheets.xlsx");
+	// const workbook = new Excel.Workbook();
+	// const content = await workbook.xlsx.readFile(filePath);
 
-	const timesheetsWs = content.getWorksheet(1);
-	const timesheets = timesheetsWs.getRows(2, timesheetsWs.rowCount - 1) ?? [];
+	// const timesheetsWs = content.getWorksheet(1);
+	// const timesheets = timesheetsWs.getRows(2, timesheetsWs.rowCount - 1) ?? [];
 
-	const promises = timesheets.map(async (row) => {
-		const timesheetId = `${getCell(row, "A")}`;
-		const timesheetQuery = db
-			.collectionGroup("TIMESHEETS")
-			.where("id", "==", timesheetId);
-		const timesheetQuerySnap = await timesheetQuery.get();
-		if (timesheetQuerySnap.size === 0) {
-			return;
-		}
+	// const promises = timesheets.map(async (row) => {
+	// 	const timesheetId = `${getCell(row, "A")}`;
+	// 	const timesheetQuery = db
+	// 		.collectionGroup("TIMESHEETS")
+	// 		.where("id", "==", timesheetId);
+	// 	const timesheetQuerySnap = await timesheetQuery.get();
+	// 	if (timesheetQuerySnap.size === 0) {
+	// 		return;
+	// 	}
 
-		const timesheetRef = timesheetQuerySnap.docs[0].ref;
-		const timesheet = timesheetQuerySnap.docs[0].data();
+	// 	const timesheetRef = timesheetQuerySnap.docs[0].ref;
+	// 	const timesheet = timesheetQuerySnap.docs[0].data();
 
-		// const { OTtime, standardTime } = timesheet.workdetails;
+	// 	// const { OTtime, standardTime } = timesheet.workdetails;
 
-		// const otTimeArray = standardTime.map((time: any) => {
-		// 	const otTime = OTtime.find((ot: any) => ot.date === time.date);
-		// 	if (otTime) {
-		// 		return otTime;
-		// 	}
-		// 	return {
-		// 		date: time.date,
-		// 		value: "00:00",
-		// 	};
-		// });
+	// 	// const otTimeArray = standardTime.map((time: any) => {
+	// 	// 	const otTime = OTtime.find((ot: any) => ot.date === time.date);
+	// 	// 	if (otTime) {
+	// 	// 		return otTime;
+	// 	// 	}
+	// 	// 	return {
+	// 	// 		date: time.date,
+	// 	// 		value: "00:00",
+	// 	// 	};
+	// 	// });
 
-		await timesheetRef.update({
-			reportingManager: timesheet?.reportingManger ?? "",
-			reportingManger: admin.firestore.FieldValue.delete(),
-			// "workdetails.OTtime": otTimeArray,
+	// 	const payload: Record<string, any> = {};
+
+	// 	if (!timesheet?.isRejected && !timesheet?.isApproved) {
+	// 		payload["isApproved"] = true;
+	// 		payload["approvedDetails"] = {
+	// 			approvedAt: new Date("2023-06-01").toISOString(),
+	// 			approvedBy: reportingManagerId,
+	// 		};
+	// 	}
+
+	// 	await timesheetRef.update({
+	// 		// reportingManager: timesheet?.reportingManger ?? "",
+	// 		// reportingManger: admin.firestore.FieldValue.delete(),
+	// 		// "workdetails.OTtime": otTimeArray,
+	// 		...payload,
+	// 	});
+
+	// 	console.log(`Timesheet ${timesheetId} updated successfully`);
+	// });
+	// await Promise.all(promises);
+	// console.log(`Done`);
+	try {
+		const timesheets = await db.collectionGroup("TIMESHEETS").get();
+		console.log(`Total timesheets: ${timesheets.size}`);
+		const requiredTimesheets = timesheets.docs.filter((timesheet) =>
+			timesheetIds.includes(timesheet.id)
+		);
+		console.log(`Total required timesheets: ${requiredTimesheets.length}`);
+		const promises = requiredTimesheets.map(async (timesheet) => {
+			try {
+				await timesheet.ref.update({
+					employeeID: "NET000154",
+				});
+				console.log(`Timesheet ${timesheet.id} updated successfully`);
+				return Promise.resolve(
+					`Timesheet ${timesheet.id} updated successfully`
+				);
+			} catch (error) {
+				console.error(
+					`Timesheet ${timesheet.id} update failed: ${(<Error>error).stack}`
+				);
+				return Promise.reject(
+					`Timesheet ${timesheet.id} update failed: ${(<Error>error).stack}`
+				);
+			}
 		});
-
-		console.log(`Timesheet ${timesheetId} updated successfully`);
-	});
-	await Promise.all(promises);
-	console.log(`Done`);
+		const promiseSettedResult = await Promise.allSettled(promises);
+		console.log(`Total: ${promiseSettedResult.length}`);
+		const rejected = promiseSettedResult.filter(
+			(result) => result.status === "rejected"
+		);
+		rejected.forEach((result) => console.log(result));
+		console.log(`Rejected: ${rejected.length}`);
+		const fulfilled = promiseSettedResult.filter(
+			(result) => result.status === "fulfilled"
+		);
+		fulfilled.forEach((result) => console.log(result));
+		console.log(`Fulfilled: ${fulfilled.length}`);
+	} catch (error) {
+		console.error(`Timesheet update failed: ${(<Error>error).stack}`);
+	}
 }
 
 export async function missedTimesheets() {

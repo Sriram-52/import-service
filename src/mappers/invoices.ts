@@ -40,6 +40,9 @@ export async function transformInvoicesData(): Promise<
 		const reqInvoiceDetails = invoiceDetails.find(
 			(row) => getCell(row, "A") === oldInvoiceId
 		);
+		const invoicedAmount = invoiceDetails
+			.filter((row) => getCell(row, "A") === oldInvoiceId)
+			.reduce((acc, row) => acc + Number(getCell(row, "N")), 0);
 		const reqInvoiceDiscount = invoiceDiscount.filter(
 			(row) => getCell(row, "A") === oldInvoiceId
 		);
@@ -69,7 +72,6 @@ export async function transformInvoicesData(): Promise<
 		const grandTotal = Number(
 			getCell(row, "R").replace("$", "").replace(/,/g, "")
 		);
-		const invoicedAmount = Number(getCell(reqInvoiceDetails, "N"));
 		let discounts: Models.Discount[] = [];
 		if (reqInvoiceDiscount) {
 			discounts = reqInvoiceDiscount.map((row) => ({
@@ -112,7 +114,7 @@ export async function transformInvoicesData(): Promise<
 					externalAmount: invoicedAmount,
 					toClient: false,
 				},
-				placementID: getCell(row, "F"),
+				placementID: getCell(reqInvoiceDetails, "F"),
 				grandTotal,
 				includeInvoicePDF: false,
 				invoiceBy: "external",
